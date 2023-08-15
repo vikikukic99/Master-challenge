@@ -1,0 +1,25 @@
+
+:root {
+  --primary: #685DC5;
+  --text: #535353;
+  --background-gray: #FBFBFB
+}
+
+body {
+  font-family: 'Apercu', sans-serif;
+}
+
+p {
+  font-family: 'Apercu Light', sans-serif;
+  font-size: 22px;
+}
+
+b {
+  font-family: 'Apercu Medium', sans-serif;
+}
+
+h2 {
+  color: var(--primary);
+  font-family: 'Apercu Medium', sans-serif;
+  font-size: 48px;
+}
