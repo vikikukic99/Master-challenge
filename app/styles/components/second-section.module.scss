@@ -1,16 +1,49 @@
 .secondSection {
+
+  .patternImage {
+    width: 400px;
+    height: 400px;
+
+    @media screen and (max-width: 400px) {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  .studentImage {
+    width: 360px;
+    height: 360px;
+
+    @media screen and (max-width: 400px) {
+      width: 310px;
+      height: 310px;
+    }
+  }
+
   .student {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+    }
+
     .left {
       width: 50%;
+
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
     }
 
     .right {
       width: 50%;
+
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
     }
   }
 
@@ -20,11 +53,19 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+    }
+
     .leftDescription {
       width: calc(33.33333% - 20px);
       align-self: stretch;
       display: flex;
       margin: 20px 0;
+
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
 
       .leftDescriptionContainer {
         padding: 30px;
@@ -34,6 +75,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media screen and (max-width: 400px) {
+          border: none;
+        }
 
         .labelPrimary {
           font-family: "Apercu Medium", sans-serif;
@@ -55,11 +100,19 @@
         .leftDescriptionTop {
           label {
             font-size: 28px;
+
+            @media screen and (max-width: 400px) {
+              font-size: 16px;
+            }
           }
 
           .labelPrimary {
             font-size: 16px;
             margin-bottom: 20px;
+
+            @media screen and (max-width: 400px) {
+              margin-bottom: 10px;
+            }
           }
         }
 
@@ -69,11 +122,17 @@
             color: var(--border);
             margin: 10px 0;
             opacity: .5;
+
+            @media screen and (max-width: 400px) {
+              opacity: 0;
+              margin-bottom: 10px;
+            }
           }
 
           .leftDescriptionBottom {
             display: flex;
             flex-wrap: wrap;
+
 
             .leftDescriptionItem {
               width: 50%;
@@ -82,12 +141,15 @@
           }
         }
 
-
       }
     }
 
     .rightDescription {
       width: calc(67% - 20px);
+
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
 
       .rightDescriptionTopContainer {
         display: flex;
@@ -95,12 +157,21 @@
         justify-content: space-between;
         margin: 20px 0;
 
+        @media screen and (max-width: 400px) {
+          flex-direction: column;
+        }
+
         .rightDescriptionTopItem {
           width: calc(50% - 80px);
           padding: 30px;
           border: 1px solid var(--border);
           border-radius: 5px;
           background: white;
+
+          @media screen and (max-width: 400px) {
+            width: calc(100% - 60px);
+            margin-bottom: 20px;
+          }
 
           .labelPrimary {
             font-family: "Apercu Medium", sans-serif;

@@ -2,6 +2,7 @@ import MainHeader from "@/app/components/MainHeader";
 import FirstSection from "@/app/components/FirstSection";
 import SecondSection from "@/app/components/SecondSection";
 import Slider from "@/app/components/Slider";
+import FAQ from "@/app/components/FAQ";
 
 async function getData() {
     const res = await fetch(
@@ -30,6 +31,7 @@ export default async function Home() {
             <FirstSection data={data}/>
             <SecondSection data={data}/>
             <Slider data={data}/>
+            <FAQ data={data}/>
         </main>
     )
 }

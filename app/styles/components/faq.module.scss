@@ -1,0 +1,161 @@
+.faq {
+
+  padding-bottom: 150px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+    }
+
+    .filterContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      @media screen and (max-width: 400px) {
+        margin-bottom: 20px;
+      }
+
+      span {
+        margin-right: 15px;
+        font-family: "Apercu Light", sans-serif;
+        color: var(--text);
+      }
+
+      .filterButton {
+
+        padding: 15px 20px;
+        border: 1px solid var(--border);
+        border-radius: 30px;
+        cursor: pointer;
+        min-width: 200px;
+        text-align: center;
+
+        .selected {
+          color: var(--primary);
+        }
+
+
+        .optionsContainer {
+          background: white;
+
+          position: absolute;
+          padding: 15px 20px;
+          border: 1px solid var(--border);
+          top: 130px;
+          right: 0;
+          text-align: center;
+          border-radius: 30px;
+          min-width: 200px;
+
+          .categoryItem {
+            margin: 7px 0;
+            color: var(--text);
+            transition: .15s;
+
+            &:hover {
+              color: var(--primary);
+              transition: .15s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .faqItem {
+
+    border-top: 1px solid var(--border);
+
+    &:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .buttonSelected,
+    .button {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      cursor: pointer;
+      background: white;
+      min-width: 40px;
+
+      @media screen and (max-width: 400px) {
+        margin-left: 20px;
+      }
+    }
+
+    .buttonSelected {
+      background: var(--primary);
+      color: white;
+    }
+
+    .faqContentSelected {
+      padding: 50px;
+
+      color: #535353;
+      font-family: "Apercu Light", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; /* 145.455% */
+      letter-spacing: -0.33px;
+    }
+
+    .faqContent {
+      height: 0;
+      overflow: hidden;
+      transition: .35s;
+    }
+
+    .faqContentSelected {
+      height: unset;
+      transition: .35s;
+    }
+
+    .faqHeader {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 0;
+      cursor: pointer;
+
+      .faqType {
+        color: var(--primary);
+        font-family: "Apercu Medium", sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 145.455% */
+        letter-spacing: -0.33px;
+        cursor: pointer;
+
+        @media screen and (max-width: 400px) {
+          display: none;
+        }
+      }
+
+      .faqQuestion {
+        color: var(--text);
+        font-family: "Apercu Medium", sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 145.455% */
+        letter-spacing: -0.33px;
+        cursor: pointer;
+      }
+
+      button {
+
+      }
+    }
+  }
+}

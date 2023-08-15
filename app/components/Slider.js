@@ -20,7 +20,7 @@ const SliderSection = ({data}) => {
     const settings = {
         dots: false,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         className: styles.sliderItem,
         speed: 500,
         slidesToShow: 3,
@@ -31,8 +31,6 @@ const SliderSection = ({data}) => {
     const renderItems = (items) => {
 
         let result = []
-
-        console.log(items)
 
         for(let item of [
             ...items,
@@ -47,6 +45,7 @@ const SliderSection = ({data}) => {
                 backgroundPositionY: "center",
                 width: '70px',
                 height: '70px',
+                minWidth: '70px',
                 borderRadius: '50%'
             };
 

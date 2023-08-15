@@ -8,8 +8,6 @@ const SecondSection = ({data}) => {
         backgroundRepeat: "repeat",
         backgroundPositionX: "center",
         backgroundPositionY: "center",
-        width: '400px',
-        height: '400px',
         borderRadius: '50%',
         display: 'flex',
         alignItems: 'center',
@@ -21,8 +19,6 @@ const SecondSection = ({data}) => {
         backgroundRepeat: "repeat",
         backgroundPositionX: "center",
         backgroundPositionY: "center",
-        width: '360px',
-        height: '360px',
         borderRadius: '50%',
     }
 
@@ -32,8 +28,8 @@ const SecondSection = ({data}) => {
             <div className={'inner-container'}>
                 <div className={styles.student}>
                     <div className={styles.left}>
-                        <div style={patternImage}>
-                            <div style={studentImage}>
+                        <div style={patternImage} className={styles.patternImage}>
+                            <div style={studentImage} className={styles.studentImage}>
 
                             </div>
                         </div>

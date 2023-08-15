@@ -42,12 +42,20 @@ h2 {
   max-width: 1440px;
   width: 100%;
   position: relative;
+
+  @media screen and (max-width: 400px) {
+    width: calc(100vw - 30px);
+  }
 }
 
 .inner-container {
   margin: 0 auto;
   max-width: 1040px;
   width: 100%;
+
+  @media screen and (max-width: 400px) {
+    width: calc(100vw - 30px);
+  }
 }
 
 .btn {

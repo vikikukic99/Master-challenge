@@ -7,6 +7,11 @@
     margin-left: -50%;
     margin-top: -300px;
     overflow: hidden;
+
+    @media screen and (max-width: 400px) {
+      margin-right: calc(-100% + 10px);
+      margin-left: calc(-100% + 10px);
+    }
   }
 
   .sliderItem {
@@ -14,11 +19,19 @@
     .sliderItemWrapper {
       padding: 30px;
 
+      @media screen and (max-width: 400px) {
+        padding: 10px;
+      }
+
 
       .sliderItemTitle {
         background: white;
         padding: 30px;
         border: 1px solid var(--background-gray);
+
+        @media screen and (max-width: 400px) {
+          padding: 10px;
+        }
 
         display: flex;
         flex-direction: row;
@@ -44,6 +57,10 @@
               font-weight: 300;
               line-height: 24px; /* 150% */
               letter-spacing: -0.16px;
+
+              @media screen and (max-width: 400px) {
+                font-size: 14px;
+              }
             }
 
             .labelPrimary {
@@ -54,6 +71,10 @@
               font-weight: 500;
               line-height: 24px; /* 150% */
               letter-spacing: -0.145px;
+
+              @media screen and (max-width: 400px) {
+                font-size: 14px;
+              }
             }
 
 
@@ -69,6 +90,10 @@
         p {
           color: #6A6A6A;
           font-size: 26px;
+
+          @media screen and (max-width: 400px) {
+            font-size: 22px;
+          }
         }
 
         span {
