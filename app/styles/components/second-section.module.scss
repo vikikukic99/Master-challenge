@@ -1,0 +1,195 @@
+.secondSection {
+  .student {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      width: 50%;
+    }
+
+    .right {
+      width: 50%;
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .leftDescription {
+      width: calc(33.33333% - 20px);
+      align-self: stretch;
+      display: flex;
+      margin: 20px 0;
+
+      .leftDescriptionContainer {
+        padding: 30px;
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .labelPrimary {
+          font-family: "Apercu Medium", sans-serif;
+          color: var(--primary);
+          font-size: 16px;
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        label {
+          margin-right: 10px;
+          font-size: 16px;
+          color: var(--text);
+          font-family: "Apercu Light", sans-serif;
+          font-weight: 300;
+          display: block;
+        }
+
+        .leftDescriptionTop {
+          label {
+            font-size: 28px;
+          }
+
+          .labelPrimary {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+
+        .leftDescriptionBottomWrapper {
+
+          hr {
+            color: var(--border);
+            margin: 10px 0;
+            opacity: .5;
+          }
+
+          .leftDescriptionBottom {
+            display: flex;
+            flex-wrap: wrap;
+
+            .leftDescriptionItem {
+              width: 50%;
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+
+      }
+    }
+
+    .rightDescription {
+      width: calc(67% - 20px);
+
+      .rightDescriptionTopContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        .rightDescriptionTopItem {
+          width: calc(50% - 80px);
+          padding: 30px;
+          border: 1px solid var(--border);
+          border-radius: 5px;
+          background: white;
+
+          .labelPrimary {
+            font-family: "Apercu Medium", sans-serif;
+            color: var(--primary);
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+          }
+
+          label {
+            margin-right: 10px;
+            font-size: 26px;
+            color: var(--text);
+            font-family: "Apercu Light", sans-serif;
+            font-weight: 300;
+            display: block;
+          }
+
+          .rightDescriptionTopItemDivider {
+            width: 20px;
+            height: 1px;
+            background: var(--border);
+            margin-top: 20px;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .rightDescriptionBottomContainer {
+        margin: 20px 0;
+
+        .rightDescriptionBottomItem {
+          width: calc(100% - 60px);
+          padding: 30px;
+          border: 1px solid var(--border);
+          border-radius: 5px;
+          background: white;
+
+          .labelPrimary {
+            font-family: "Apercu Medium", sans-serif;
+            color: var(--primary);
+            font-size: 16px;
+            display: block;
+            margin-bottom: 10px;
+          }
+
+          label {
+            margin-right: 10px;
+            font-size: 26px;
+            color: var(--text);
+            font-family: "Apercu Light", sans-serif;
+            font-weight: 300;
+            display: block;
+          }
+
+          .rightDescriptionTopItemDivider {
+            width: 20px;
+            height: 1px;
+            background: var(--border);
+            margin-top: 20px;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .rightDescriptionMiddleContainer {
+        display: flex;
+        align-items: center;
+        span {
+          height: 1px;
+          width: 100%;
+          background: var(--border);
+        }
+
+        label {
+          margin: 10px;
+          color: var(--text);
+        }
+      }
+    }
+  }
+}

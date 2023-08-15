@@ -4,7 +4,7 @@ import Image from "next/image";
 import {useEffect, useState} from "react";
 import {format} from "date-fns";
 
-const FirstSection = () => {
+const FirstSection = ({data}) => {
 
     let today = new Date()
     today = today.setDate(today.getDate() + 6)
@@ -48,7 +48,7 @@ const FirstSection = () => {
                 <div className={styles.content}>
                     <div className={styles.left}>
                         <h2>
-                            Interaction Design Apprenticeship
+                            {data?.scholarship?.name}
                             <Image src={'/Icon.png'} alt={'icon'} width={266} height={266}></Image>
                         </h2>
                         <p>
@@ -57,8 +57,7 @@ const FirstSection = () => {
                             </b>
                         </p>
                         <p>
-                            Harbour.Space has partnered with SCG to empower driven talent and eliminate the barriers to
-                            accessing exceptional education and career opportunities through a Masters Fellowship.
+                            {data?.scholarship?.description[0]?.data}
                         </p>
                         <p>
                             <b>Position: </b>Marketing Performance
@@ -100,11 +99,11 @@ const FirstSection = () => {
                             <div className={styles.descriptionContainer}>
                                 <div className={styles.item}>
                                     <label className={styles.labelPrimary}>Location</label>
-                                    <label>Bangkok</label>
+                                    <label>{data?.scholarship?.location?.name}</label>
                                 </div>
                                 <div className={styles.item}>
                                     <label className={styles.labelPrimary}>Duration</label>
-                                    <label>1 Year <br/> Full-Time</label>
+                                    <label>{data?.scholarship?.duration} Year <br/> Full-Time</label>
                                 </div>
                                 <div className={styles.item}>
                                     <label className={styles.labelPrimary}>Start date</label>

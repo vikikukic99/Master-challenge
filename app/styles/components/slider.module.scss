@@ -1,0 +1,86 @@
+.slider {
+  margin: 100px 0;
+  overflow: hidden;
+
+  .sliderContainer {
+    margin-right: -50%;
+    margin-left: -50%;
+    margin-top: -300px;
+    overflow: hidden;
+  }
+
+  .sliderItem {
+
+    .sliderItemWrapper {
+      padding: 30px;
+
+
+      .sliderItemTitle {
+        background: white;
+        padding: 30px;
+        border: 1px solid var(--background-gray);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .sliderItemTitleContainer {
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .sliderItemTitleContent {
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+
+            label {
+              color: var(--text);
+              font-family: "Apercu Light", sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 24px; /* 150% */
+              letter-spacing: -0.16px;
+            }
+
+            .labelPrimary {
+              color: var(--text);
+              font-family: "Apercu Medium", sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px; /* 150% */
+              letter-spacing: -0.145px;
+            }
+
+
+          }
+        }
+      }
+
+      .sliderItemContent {
+        padding: 30px;
+        background: var(--background-gray);
+        border: 1px solid var(--background-gray);
+
+        p {
+          color: #6A6A6A;
+          font-size: 26px;
+        }
+
+        span {
+          font-family: "Apercu Light", sans-serif;
+          color: #535353;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.16px;
+        }
+      }
+    }
+  }
+}
