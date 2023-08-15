@@ -20,7 +20,7 @@ const SliderSection = ({data}) => {
     const settings = {
         dots: false,
         infinite: true,
-        // autoplay: true,
+        autoplay: true,
         className: styles.sliderItem,
         speed: 500,
         slidesToShow: 3,

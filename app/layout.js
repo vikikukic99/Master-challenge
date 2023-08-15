@@ -1,5 +1,6 @@
 import "@/app/styles/global.scss"
 import "@/app/styles/fonts.scss"
+import ServerProvider from "@/app/components/ServerProvider";
 
 export const metadata = {
     title: 'Create Next App',
@@ -13,7 +14,11 @@ export default function RootLayout({children}) {
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         </head>
-        <body>{children}</body>
+        <body>
+            <ServerProvider>
+                {children}
+            </ServerProvider>
+        </body>
         </html>
-)
+    )
 }

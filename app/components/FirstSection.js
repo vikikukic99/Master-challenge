@@ -2,7 +2,8 @@
 import styles from '@/app/styles/components/first-section.module.scss'
 import Image from "next/image";
 import {useEffect, useState} from "react";
-import {format} from "date-fns";
+import {useDispatch} from "react-redux";
+import {updateData} from "@/app/slices/CounterSlice";
 
 const FirstSection = ({data}) => {
 
@@ -10,6 +11,7 @@ const FirstSection = ({data}) => {
     today = today.setDate(today.getDate() + 6)
     const [date, setDate] = useState(new Date(today))
     const [calculation, setCalculation] = useState()
+    const dispatch = useDispatch()
 
     const imageStyle = {
         backgroundImage: `url(pattern.png)`,
@@ -24,12 +26,17 @@ const FirstSection = ({data}) => {
             const diff = date - new Date()
 
             if(diff > 0) {
-                setCalculation({
+
+                const calcData = {
                     days: Math.floor(diff / (1000 * 60 * 60 * 24)),
                     hours: Math.floor((diff / (1000 * 60 * 60)) % 60),
                     minutes: Math.floor((diff / 1000 / 60) % 60),
                     seconds: Math.floor((diff / 1000) % 60),
-                })
+                }
+
+                setCalculation(calcData)
+
+                dispatch(updateData(calcData))
             }
 
             else {

@@ -3,6 +3,7 @@ import FirstSection from "@/app/components/FirstSection";
 import SecondSection from "@/app/components/SecondSection";
 import Slider from "@/app/components/Slider";
 import FAQ from "@/app/components/FAQ";
+import FixedHeader from "@/app/components/FixedHeader";
 
 async function getData() {
     const res = await fetch(
@@ -32,6 +33,7 @@ export default async function Home() {
             <SecondSection data={data}/>
             <Slider data={data}/>
             <FAQ data={data}/>
+            <FixedHeader/>
         </main>
     )
 }

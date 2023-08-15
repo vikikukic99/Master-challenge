@@ -17,11 +17,19 @@
     font-size: 22px;
     font-family: "Apercu Medium", sans-serif;
 
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
+
     span {
       margin-top: 3px;
       margin-left: 5px;
       font-family: "Apercu", sans-serif;
       font-size: 14px;
+
+      @media screen and (max-width: 400px) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -38,6 +46,10 @@
     bottom: -65px;
     cursor: pointer;
     transition: .15s;
+
+    @media screen and (max-width: 400px) {
+      display: none;
+    }
 
     &:hover {
       opacity: .95;
