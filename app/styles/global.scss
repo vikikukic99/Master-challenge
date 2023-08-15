@@ -2,10 +2,18 @@
 :root {
   --primary: #685DC5;
   --text: #535353;
-  --background-gray: #FBFBFB
+  --background-gray: #FBFBFB;
+  --green: #469761;
+}
+
+html {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 body {
+  padding: 0;
+  margin: 0 !important;
   font-family: 'Apercu', sans-serif;
 }
 
@@ -22,4 +30,17 @@ h2 {
   color: var(--primary);
   font-family: 'Apercu Medium', sans-serif;
   font-size: 48px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+}
+
+.inner-container {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
 }

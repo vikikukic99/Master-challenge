@@ -1,0 +1,47 @@
+.headerContainer {
+  background: var(--primary);
+  padding: 15px 30px;
+  position: relative;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    display: inline-flex;
+    color: white;
+    margin: 0;
+    font-size: 22px;
+    font-family: "Apercu Medium", sans-serif;
+
+    span {
+      margin-top: 3px;
+      margin-left: 5px;
+      font-family: "Apercu", sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  button {
+    position: absolute;
+    text-transform: uppercase;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    background: var(--green);
+    border: none;
+    right: 50px;
+    bottom: -65px;
+    cursor: pointer;
+    transition: .15s;
+
+    &:hover {
+      opacity: .95;
+      transition: .15s;
+    }
+  }
+}
