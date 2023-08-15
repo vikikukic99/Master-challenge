@@ -4,6 +4,7 @@
   --text: #535353;
   --background-gray: #FBFBFB;
   --green: #469761;
+  --border: #DADADA;
 }
 
 html {
@@ -20,10 +21,14 @@ body {
 p {
   font-family: 'Apercu Light', sans-serif;
   font-size: 22px;
+  line-height: 30px;
+  margin: 30px 0;
+  color: var(--text);
 }
 
 b {
   font-family: 'Apercu Medium', sans-serif;
+  color: var(--text);
 }
 
 h2 {
@@ -43,4 +48,25 @@ h2 {
   margin: 0 auto;
   max-width: 1040px;
   width: 100%;
+}
+
+.btn {
+  height: 58px;
+  padding: 0 20px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Apercu Light", sans-serif;
+  font-size: 22px;
+  border: 1px solid transparent;
+  background: var(--primary);
+  cursor: pointer;
+  margin-top: 15px;
+  transition: .15s;
+
+  &:hover {
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: .15s;
+  }
 }
